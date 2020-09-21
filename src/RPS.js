@@ -5,7 +5,7 @@ const displayResult = document.getElementById('result')
 const computerChoice = document.getElementById('computer-choice')
 const randomComputerChoice = Math.floor(Math.random() * (3))
 const userChoice = document.getElementById('user-choice')
-const possibleChoices = document.queryCommandEnabled.querySelectorALL('.choices')
+const possibleChoices = document.querySelectorALL('.choices')
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   userChosen = e.target.id
