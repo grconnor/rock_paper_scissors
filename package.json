@@ -1,0 +1,18 @@
+{
+  "name": "rock_paper_scissors",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/grconnor/rock_paper_scissors.git",
+  "author": "<connorroelofsen15@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^5.2.0"
+  },
+  "dependencies": {
+    "superstatic": "^7.0.0"
+  },
+  "scripts": {
+    "start": "superstatic src --port 3001",
+    "cy:open": "cypress open & yarn start --silent"
+  }
+}
