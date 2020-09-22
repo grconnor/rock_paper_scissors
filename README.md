@@ -3,6 +3,7 @@ Initialized.
 --------------------------------------------------
 
 To do:
+Try and fix initial undefined for computer choice/display.
 Add scoreboard function
 Add images or add to html
 Make selections expand while hovering over
