@@ -5,7 +5,7 @@ const displayResult = document.getElementById('result')
 const computerChoice = document.getElementById('computer-choice')
 const randomComputerChoice = Math.floor(Math.random() * (3))
 const userChoice = document.getElementById('user-choice')
-const possibleChoices = document.querySelectorALL('.choices')
+const possibleChoices = document.querySelectorAll('.choices')
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   userChosen = e.target.id
@@ -29,17 +29,17 @@ function generatedComputerChoice() {
 function results() {
   if(computerChosen === userChosen) {
     return result = 'It was a tie!'
-  } else if (computerChosen === 'rock' && userChose === 'scissors') {
+  } else if (computerChosen === 'rock' && userChosen === 'scissors') {
     return result = 'You lost!'
-  } else if (computerChosen === 'rock' && userChose === 'paper') {
+  } else if (computerChosen === 'rock' && userChosen === 'paper') {
     return result = 'You won!'
-  } else if (computerChosen === 'paper' && userChose === 'rock') {
+  } else if (computerChosen === 'paper' && userChosen === 'rock') {
     return result = 'You lost!'
-  } else if (computerChosen === 'paper' && userChose === 'scissors') {
+  } else if (computerChosen === 'paper' && userChosen === 'scissors') {
     return result = 'You won!'
-  } else if (computerChosen === 'scissors' && userChose === 'paper') {
+  } else if (computerChosen === 'scissors' && userChosen === 'paper') {
     return result = 'You lost!'
-  } else if (computerChosen === 'scissors' && userChose === 'rock') {
+  } else if (computerChosen === 'scissors' && userChosen === 'rock') {
     return result = 'You won!'
   }
 }
