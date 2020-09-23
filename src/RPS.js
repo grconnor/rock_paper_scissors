@@ -16,12 +16,12 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 }))
 
 function generatedComputerChoice() {
-  let randomComputerChoice = Math.round(Math.random() * (3))
-  if (randomComputerChoice === 1) {
+  let randomComputerChoice = Math.floor(Math.random() * 3)
+  if (randomComputerChoice === 0) {
     return computerChosen = 'rock'
-  } else if (randomComputerChoice === 2) {
+  } else if (randomComputerChoice === 1) {
     return computerChosen = 'paper'
-  } else if (randomComputerChoice === 3) {
+  } else if (randomComputerChoice === 2) {
     return computerChosen = 'scissors'
   }
 }
