@@ -7,25 +7,30 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-
-    <h1 id="h1">Connor's Rock Paper Scissors Game</h1>
-    <h2 id ="h2">You vs the computer</h2>
-
-    <div id="user-display">Your choice: </div>
-    <div id="user-choice"></div>
     
-    <div id="computer-display">Computer choice: </div>
-    <div id="computer-choice"></div>
+    <div class="headers">
+      <h1 id="h1">Connor's Rock Paper Scissors Game</h1>
+      <h2 id ="h2">You vs a computer</h2>
+    </div>
+    
+    <div class="user">
+      <div id="user-display">Your choice: </div>
+      <div id="user-choice"></div>
+    </div>
 
-    <div id="result-display">Results: </div>
-    <div id="result"></div>
+    <div class="computer">
+      <div id="computer-display">Computer choice: </div>
+      <div id="computer-choice"></div>
+    </div>
+
+    <div class="results">
+      <div id="result-display">VS</div>
+      <div id="result"></div>
+    </div>
 
     <button class="choices" id="Rock">Rock</button>
     <button class="choices" id="Paper">Paper</button>
     <button class="choices" id="Scissors">Scissors</button>
-
-    <div id="user-score">0</div>
-    <div id="computer-score">0</div>
 
   </body>
   <script src="RPS.js" charset="utf-8"></script>

@@ -4,9 +4,16 @@ body {
 }
 
 .choices {
-  display: inline-block;
-  color: black;
+  padding: 25px 25px;
+  background-color: rgb(170, 128, 128);
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  border: none;
   font-size: 30px;
+  margin-top: 100px;
+}
+
+.headers {
+  border: black;
 }
 
 #h1 {
@@ -18,47 +25,47 @@ body {
 #h2 {
   color: black;
   font-size: 2.2em;
+  margin-bottom: 150px;
+}
+
+.user {
+  color: turquoise;
+  float: left;
+  margin: 10px;
+  margin-left: 300px;
+  font-size: 1.8em;
+}
+
+.computer {
+  color: rgb(218, 49, 49);
+  float: right;
+  margin: 10px;
+  margin-right: 300px;
+  font-size: 1.8em;
+}
+
+.results {
+  border-style: dotted;
+  color: white;
+  font-size: 2.5em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-top: 50px;
+  margin: 10px;
 }
 
 #user-display {
-  color: turquoise;
-  font-size: 1.7em;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  margin-left: 300px;
-  float: left;
 }
 
 #user-choice {
-  color: turquoise;
-  font-size: 1.5em;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  margin-left: 10px;
-  float: left;
 }
 
 #computer-display {
-  color: rgb(218, 49, 49);
-  font-size: 1.7em;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #computer-choice {
-  color: rgb(218, 49, 49);
-  font-size: 1.5em;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  margin-right: 10px;
-  float: right;
-  
 }
 
-#result-display {
-  color: white;
-  font-size: 2.5em;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  margin-right: 50px;
-}
-
-#result {
-  color: black;
-  font-size: 2.5em;
-}
