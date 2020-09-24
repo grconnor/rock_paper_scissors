@@ -3,6 +3,8 @@ let computerChosen
 const displayResult = document.getElementById('result')
 const userChoice = document.getElementById('user-choice')
 var result = results()
+var userScore = 0;
+var computerScore = 0;
 const possibleChoices = document.querySelectorAll('.choices')
 const computerChoice = document.getElementById('computer-choice')
 
@@ -18,28 +20,28 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 function generatedComputerChoice() {
   let randomComputerChoice = Math.floor(Math.random() * 3)
   if (randomComputerChoice === 0) {
-    return computerChosen = 'rock'
+    return computerChosen = 'Rock'
   } else if (randomComputerChoice === 1) {
-    return computerChosen = 'paper'
+    return computerChosen = 'Paper'
   } else if (randomComputerChoice === 2) {
-    return computerChosen = 'scissors'
+    return computerChosen = 'Scissors'
   }
 }
 
 function results() {
   if (computerChosen === userChosen) {
     return result = 'It was a tie!'
-  } else if (computerChosen === 'rock' && userChosen === 'scissors') {
+  } else if (computerChosen === 'Rock' && userChosen === 'Scissors') {
     return result = 'You lost!'
-  } else if (computerChosen === 'rock' && userChosen === 'paper') {
+  } else if (computerChosen === 'Rock' && userChosen === 'Paper') {
     return result = 'You won!'
-  } else if (computerChosen === 'paper' && userChosen === 'rock') {
+  } else if (computerChosen === 'Paper' && userChosen === 'Rock') {
     return result = 'You lost!'
-  } else if (computerChosen === 'paper' && userChosen === 'scissors') {
+  } else if (computerChosen === 'Paper' && userChosen === 'Scissors') {
     return result = 'You won!'
-  } else if (computerChosen === 'scissors' && userChosen === 'paper') {
+  } else if (computerChosen === 'Scissors' && userChosen === 'Paper') {
     return result = 'You lost!'
-  } else if (computerChosen === 'scissors' && userChosen === 'rock') {
+  } else if (computerChosen === 'Scissors' && userChosen === 'Rock') {
     return result = 'You won!'
   }
 }
