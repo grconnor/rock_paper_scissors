@@ -3,11 +3,10 @@ Initialized.
 --------------------------------------------------
 
 To do:
-Try and fix initial undefined for computer choice/display.
-Add scoreboard function
-Add images or add to html
-Make selections expand while hovering over
-Make the winner clearly visible
+Try and fix initial undefined for computer choice/display. - Fixed.
+Add scoreboard function - Not complete.
+Add images or add to html - Sticking with text, maybe implement in the future.
+Make the winner clearly visible - Fixed.
 
 
 
