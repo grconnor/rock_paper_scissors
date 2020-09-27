@@ -1,12 +1,15 @@
 let userChosen
 let computerChosen
-const displayResult = document.getElementById('result')
+
 const userChoice = document.getElementById('user-choice')
+const computerChoice = document.getElementById('computer-choice')
+const displayResult = document.getElementById('result')
+
 var result = results()
 var userScore = 0;
 var computerScore = 0;
+
 const possibleChoices = document.querySelectorAll('.choices')
-const computerChoice = document.getElementById('computer-choice')
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   userChosen = e.target.id
@@ -45,4 +48,3 @@ function results() {
     return result = 'You won!'
   }
 }
-

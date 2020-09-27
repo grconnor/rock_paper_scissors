@@ -3,5 +3,9 @@ describe('User can play the rps game', () => {
     cy.visit('http://localhost:3001')
   })
 
-  
+  it('displays you lost', () => {
+    cy.contains('Rock').click();
+    cy.get('#computer-choice')
+    cy.get('#result').should('contain', '')
+  })  
 })
