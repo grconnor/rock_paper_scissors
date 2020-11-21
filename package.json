@@ -9,7 +9,7 @@
     "cypress": "^5.2.0"
   },
   "dependencies": {
-    "superstatic": "^7.0.0"
+    "superstatic": "^7.0.1"
   },
   "scripts": {
     "start": "superstatic src --port 3001",
